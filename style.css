@@ -9,6 +9,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: white;
 }
 header{
     background-color: black;
@@ -35,6 +36,7 @@ h4{
 .logo{
     font-size: 40px;
     margin:20px 40px 20px 140px;
+    font-family: "ultra";
 }
 .header-nav-box{
     display: flex;
