@@ -16,6 +16,7 @@ header{
     color: white;
     width: 100%;
     font-weight: 400;
+    position: relative;
 }
 h4{
     font-family: "ultra";
@@ -42,6 +43,12 @@ h4{
     display: flex;
     gap: 60px;
 }
+.green-line-top{
+    position: absolute;
+    rotate: -90deg;
+    left: 850px;
+    top: -120px;
+}
 .contact-button{
     display: flex;
     justify-content: center;
@@ -63,6 +70,9 @@ h4{
     header{
         width: 100%;
         max-width: 400px;
+    }
+    .green-line-top{
+        opacity: 0;
     }
     .mobile-navigation-icon{
         display: flex;
@@ -88,6 +98,13 @@ h4{
     background-color: black;
     color: white;
     font-weight: 400;
+    position: relative;
+    overflow-y: hidden;
+}
+.green-line-right{
+    position: absolute;
+    left: 1477px;
+    top: 200px;
 }
 .page-1-container{
     display: flex;
@@ -138,9 +155,10 @@ h4{
 .page-1-image-2{
     position: absolute;
     z-index: 2;
-    top: -20px;
+    top: 0px;
     max-width: 341px;
     max-height: 328px;
+    left: 60px;
 }
 .page-1-image-3{
     position: absolute;
@@ -158,14 +176,38 @@ h4{
     max-width: 351px;
     max-height: 501px;
 }
+.page-1-image-5{
+    position: absolute;
+    z-index: 1;
+    max-width: 154px;
+    max-height: 134px;
+    scale: 1.2;
+    top: 250px;
+    left:40px
+}
+.page-1-image-6{
+    position: absolute;
+    max-width: 278px;
+    max-height: 211px;
+    left: 280px;
+    top: 50px;
+}
+.green-line-bottom{
+    position: absolute;
+    left: 660px;
+    bottom: -50px;
+}
 .down-button{
     display: flex;
     align-items: center;
-    margin: 180px auto;
+    margin: 200px auto;
     max-width: 66px;
     max-height: 66px;
 }
 @media (max-width:375px){
+    .green-line-right{
+        opacity: 0;
+    }
     .page-1{
         flex-direction: column;
         margin: 0px;
@@ -197,6 +239,9 @@ h4{
         padding: 5px;
         max-width: 300;
         max-height: 160;
+    }
+    .green-line-bottom{
+        opacity: 0;
     }
     .down-button{
         margin-top: 100px;
